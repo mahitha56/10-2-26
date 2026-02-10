@@ -131,3 +131,7 @@ class Solution:
 
 
 
+
+structure of table
+forms in html
+name="ts
