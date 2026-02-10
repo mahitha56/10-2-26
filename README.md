@@ -128,10 +128,59 @@ class Solution:
 </html>
 
 
-
-
-
-
 structure of table
 forms in html
 name="ts
+
+You are given two sorted lists.
+Merge them into one sorted list.
+
+Example
+list1 = [1,3,5]
+list2 = [2,4,6]
+
+Output = [1,2,3,4,5,6]
+
+🔹 Method 1 — Two Pointer Technique (Best & Optimal)
+💡 Idea
+
+Since both lists are already sorted:
+
+Compare first elements
+
+Add smaller element
+
+Move that pointer
+
+Repeat until both lists finish
+
+✅ Python Code (Array/List version)
+def mergeSortedLists(list1, list2):
+    i = j = 0
+    merged = []
+
+    while i < len(list1) and j < len(list2):
+        if list1[i] <= list2[j]:
+            merged.append(list1[i])
+            i += 1
+        else:
+            merged.append(list2[j])
+            j += 1
+
+    # add remaining elements
+    merged.extend(list1[i:])
+    merged.extend(list2[j:])
+
+    return merged
+
+
+# Example
+print(mergeSortedLists([1,3,5], [2,4,6]))
+
+⏱ Complexity
+Time  = O(n + m)
+Space = O(n + m)
+
+🔹 Method 2 — Linked List version (Very important for interviews)
+
+If lists are linked lists, we use a dummy node.
