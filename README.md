@@ -29,5 +29,102 @@ class Solution:
 
 #today claass
 
+<html>
+    <head>
+        <title>Day-7</title>
+        <style>
+            table,th,td{
+                border: 2px solid black;
+                border-collapse:collapse;
+                padding: 5px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Day-7</h1>
+        <h2>Row span</h1>
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>College</th>
+                <th>Class</th>
+
+            </tr>
+            <tr>
+                <td>Mahitha</td>
+                <td>Spmvv</td>
+                <td rowspan="3">3rd Year</td>
+               
+            </tr>
+            <tr>
+                <td>Kalyani</td>
+                <td>Svu</td>
+               
+            </tr>
+            <tr>
+                <td>Mahi</td>
+                <td>Spmvv</td>
+                
+
+            </tr>
+        </table>
+        <br>
+<h1>Column span</h1>
+      <table >
+    <tr>
+        <th colspan="2">Student Details</th>
+    </tr>
+
+    <tr>
+        <td>Name</td>
+        <td>Mahitha</td>
+    </tr>
+
+    <tr>
+        <td>Course</td>
+        <td>Full Stack</td>
+    </tr>
+</table>
+<br>
+<h1>Forms</h1>
+<form class="hlo">
+    <h2> choose Branch</h2>
+    <br>
+    <label>CSE</label>
+    <input type="radio" name="hlo">
+    <br>
+    <br>
+    <label>ECE</label>
+    <input type="radio" name="hlo"><br><br>
+    <label>EEE</label>
+    <input type="radio" name="hlo"><br><br>
+    <label>Mech</label>
+    <input type="radio" name="hlo"><br><br>
+
+</form>
+
+<h2>Checkpoint</h2>
+<form class="hlo">
+    <h3>Skills</h3>
+
+    <label>
+        <input type="checkbox"> Python
+    </label><br><br>
+
+    <label>
+        <input type="checkbox"> HTML
+    </label><br><br>
+
+    <label>
+        <input type="checkbox"> JavaScript
+    </label><br><br>
+
+    <label>
+        <input type="checkbox"> Django
+    </label><br><br>
+</form>
+
+    </body>
+</html>
 
 
